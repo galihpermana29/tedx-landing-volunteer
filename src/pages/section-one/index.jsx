@@ -23,13 +23,12 @@ export const SectionOne = () => {
         loop>
         <source src={vid1} type="video/mp4" />
       </video>
-      <div class="hidden lg:absolute  z-[3] lg:flex flex-col justify-end items-start bg-transparent left-0 right-0 h-[100vh] cont"></div>
       <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
         <div class="relative text-white z-[4] flex flex-col justify-end items-start h-[100vh] cont">
           <div
             className={`${
               video ? 'opacity-[0.00001]' : ''
-            } absolute top-[100px] left-[100px] max-w-[250px] transition-all ease-in-out duration-[0.2s]`}>
+            } hidden lg:flex absolute top-[100px] left-[100px] max-w-[250px] transition-all ease-in-out duration-[0.2s]`}>
             <MouseParallaxChild factorX={0.3} factorY={0.5}>
               <img src={awan1} alt="t" />
             </MouseParallaxChild>
@@ -37,7 +36,7 @@ export const SectionOne = () => {
           <div
             className={`${
               video ? 'opacity-[0.00001]' : ''
-            } absolute top-[250px] right-[200px] max-w-[200px] transition-all ease-in-out duration-[0.4s]`}>
+            }hidden lg:flex absolute top-[250px] right-[200px] max-w-[200px] transition-all ease-in-out duration-[0.4s]`}>
             <MouseParallaxChild factorX={0.7} factorY={0.8}>
               <img src={awan2} alt="t" />
             </MouseParallaxChild>
@@ -45,7 +44,7 @@ export const SectionOne = () => {
           <div
             className={`${
               video ? 'opacity-[0.00001]' : ''
-            } absolute bottom-[100px] right-[500px] transition-all ease-in-out duration-[0.5s]`}>
+            }hidden lg:flex absolute bottom-[100px] right-[500px] transition-all ease-in-out duration-[0.5s]`}>
             <MouseParallaxChild factorX={0.3} factorY={0.3}>
               <img src={burung} alt="t" />
             </MouseParallaxChild>
