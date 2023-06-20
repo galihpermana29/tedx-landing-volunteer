@@ -1,0 +1,48 @@
+@media only screen and (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.line {
+  width: 25px;
+  height: 1px;
+  background-color: white;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+  &.is-active {
+    .line {
+      background-color: white;
+    }
+  }
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+/* ONE */
+
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(49deg);
+  -ms-transform: translateY(10px) rotate(49deg);
+  -o-transform: translateY(10px) rotate(49deg);
+  transform: translateY(10px) rotate(49deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(-49deg);
+  -ms-transform: translateY(-10px) rotate(-49deg);
+  -o-transform: translateY(-10px) rotate(-49deg);
+  transform: translateY(-10px) rotate(-49deg);
+}

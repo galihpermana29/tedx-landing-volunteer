@@ -1,0 +1,20 @@
+#video-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1000;
+  height: 100vh;
+}
+
+.jumbotron {
+  // background: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
