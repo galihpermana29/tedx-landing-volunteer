@@ -110,7 +110,7 @@ export const SectionThree = () => {
                         <div className="h-[250px] md:mb-[100px] flex justify-center items-center">
                           <img src={p.img} alt="s" />
                         </div>
-                        <p className="font-open font-[600] md:text-[20px] text-center max-w-[300px] md:max-w-[500px] border-2">
+                        <p className="font-open font-[600] md:text-[20px] text-center max-w-[300px] md:max-w-[500px] ">
                           {p.text}
                         </p>
                       </MouseParallaxChild>
