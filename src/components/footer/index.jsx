@@ -38,7 +38,7 @@ export const Footer = () => {
       </div>
 
       <div className="absolute bottom-0 border-t-2 left-0 right-0">
-        <div className="text-white p-[20px] text-center font-[600] text-[16px]">
+        <div className="text-white text-[10px] p-[20px] text-center font-[600]">
           © 2023 TEDxUniversitasBrawijaya 2023, An independently organized TED
           event under license from TED.
         </div>

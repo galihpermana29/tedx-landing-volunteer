@@ -17,10 +17,13 @@ export const SectionOne = () => {
     <div className="relative overflow-hidden h-[100vh]">
       <video
         className="absolute h-auto w-auto min-h-[100%] min-w-[100%] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[1] object-cover"
-        preload
+        autoplay="autoplay"
+        loop="loop"
         muted
-        autoPlay
-        loop>
+        defaultMuted
+        playsinline
+        oncontextmenu="return false;"
+        preload="auto">
         <source src={vid1} type="video/mp4" />
       </video>
       <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
