@@ -13,7 +13,6 @@ export const SectionFive = () => {
         muted
         defaultMuted
         playsinline
-        oncontextmenu="return false;"
         preload="auto">
         <source src={vid1} type="video/mp4" />
       </video>
