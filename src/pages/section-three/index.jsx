@@ -65,7 +65,7 @@ const data = [
       },
       {
         img: sponsor,
-        text: 'Mengelola sumber-sumber dana sebagai akomodasi biaya dalam acara',
+        text: 'Mengelola hal-hal finansial dan bekerjasama dengan pihak eksternal untuk mendapatkan dana dalam mendukung terpenuhinya kebutuhan acara',
       },
     ],
   },
