@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export function useHorizontalScroll(status = false) {
+export function useHorizontalScroll() {
   const navigate = useNavigate();
   const elRef = useRef();
   useEffect(() => {

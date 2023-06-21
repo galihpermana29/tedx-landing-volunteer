@@ -18,7 +18,7 @@ export const SectionFive = () => {
         <source src={vid1} type="video/mp4" />
       </video>
 
-      <div class="relative text-white z-[4] flex flex-col justify-end items-center text-center h-[100vh] cont">
+      <div class="relative text-white z-[4] flex flex-col justify-center items-center text-center h-[100vh] cont">
         <div className="mb-[200px] hover:mb-[250px] transition-all ease-in-out duration-[0.5s] cursor-pointer flex flex-col justify-center items-center">
           <div
             className={`${
@@ -37,7 +37,7 @@ export const SectionFive = () => {
           onClick={() => {
             setVideo(!video);
           }}
-          className="hover:underline font-[400] text-[15px] font-open cursor-pointer w-full text-center pb-[20px]">
+          className="hover:underline font-[400] text-[15px] font-open cursor-pointer w-full text-center">
           {video ? 'Tutup' : 'Lihat'} Video
         </div>
       </div>

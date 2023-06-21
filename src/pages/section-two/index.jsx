@@ -2,12 +2,14 @@ import aboutus from '../../assets/imgs/aboutus.png';
 import flower from '../../assets/imgs/flower.png';
 export const SectionTwo = () => {
   return (
-    <div className="relative min-h-screen bg-[url('../public/texture.png')]" id="section-two" >
-      <div className="cont py-[50px]">
+    <div
+      className="relative min-h-screen bg-[url('../public/texture.png')]"
+      id="section-two">
+      <div className="cont py-[50px] flex flex-col justify-center items-center">
         <div className="flex justify-center items-center">
           <img src={aboutus} alt="aboutuse" />
         </div>
-        <div className="text flex flex-wrap mt-[50px] gap-[20px] justify-between text-justify">
+        <div className="text flex flex-wrap mt-[50px] gap-[20px] justify-between text-justify w-full max-w-[1300px]">
           <div className="flex flex-col gap-[20px] min-w-[300px] max-w-[570px] flex-1">
             <div>
               <h1 className="font-open text-black font-[700] text-[20px]">
@@ -15,10 +17,10 @@ export const SectionTwo = () => {
               </h1>
               <p className="mt-[20px] font-open text-black font-[400] text-[16px]">
                 TED merupakan sebuah organisasi nirlaba dengan semangat “Ideas
-                Worth Spreading” yang berfokus pada Technology, Education, dan
-                Design. TED pertama kali dibentuk pada tahun 1984 dan menjadi
-                ruang bagi individu-individu dengan semangat yang sama untuk
-                menyebarkan ide-ide brilian di seluruh dunia.
+                Worth Spreading” yang berfokus pada Technology, Entertainment,
+                dan Design. TED pertama kali dibentuk pada tahun 1984 dan
+                menjadi ruang bagi individu-individu dengan semangat yang sama
+                untuk menyebarkan ide-ide brilian di seluruh dunia.
               </p>
             </div>
             <div>
@@ -52,7 +54,7 @@ export const SectionTwo = () => {
         </div>
       </div>
       <div className="hidden md:z-20 md:absolute md:block md:bottom-[-80px] md:right-[0px] lg:right-[50px] overflow-hidden">
-        <img src={flower} alt="bunga" className='lg:w-[500px]'/>
+        <img src={flower} alt="bunga" className="lg:w-[500px]" />
       </div>
     </div>
   );

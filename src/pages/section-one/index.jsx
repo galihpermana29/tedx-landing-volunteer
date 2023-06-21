@@ -39,7 +39,7 @@ export const SectionOne = () => {
           <div
             className={`${
               video ? 'opacity-[0.00001]' : ''
-            }hidden lg:flex absolute top-[250px] right-[200px] max-w-[200px] transition-all ease-in-out duration-[0.4s]`}>
+            } hidden lg:flex absolute top-[250px] right-[200px] max-w-[200px] transition-all ease-in-out duration-[0.4s]`}>
             <MouseParallaxChild factorX={0.7} factorY={0.8}>
               <img src={awan2} alt="t" />
             </MouseParallaxChild>

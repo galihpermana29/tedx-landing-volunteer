@@ -28,13 +28,15 @@ export const SectionSix = () => {
               <span className="text-red-600">TEDx</span>UniversitasBrawijaya
               2023!
             </div>
-            <Link
+            <a
+              target="_blank"
+              href="https://bit.ly/3NC990X"
               className="  
               cursor-pointer
               button-register
             mt-[50px] w-[250px] h-[70px] flex justify-center items-center bg-[#04BD2C] rounded-[10px] border-2 border-black font-open text-[20px] font-[700] text-white uppercase">
               Daftar Di Sini{' '}
-            </Link>
+            </a>
           </div>
         </div>
       </div>

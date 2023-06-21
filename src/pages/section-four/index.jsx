@@ -22,7 +22,7 @@ export const SectionFour = () => {
               <div className="h-[200px] w-[350px]">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/1fLUkqvb-0s"
+                  src="https://www.youtube.com/embed/N4u36OXvUkI"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -61,7 +61,7 @@ export const SectionFour = () => {
               <div className="h-[200px] w-[350px]">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/N4u36OXvUkI"
+                  src="https://www.youtube.com/embed/1fLUkqvb-0s"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -69,8 +69,7 @@ export const SectionFour = () => {
               </div>
               <div className=" h-[100px] flex justify-center items-center ">
                 <div className="max-w-[300px] text-center">
-                  Manifestasi Peradaban: Yang Dibicarakan Ketika Membicarakan
-                  Manusia
+                  Merayakan Kembali: Menggeledah Arus, Menilik Ruang
                 </div>
               </div>
             </div>
@@ -85,8 +84,7 @@ export const SectionFour = () => {
               </div>
               <div className=" h-[100px] flex justify-center items-center ">
                 <div className="max-w-[300px] text-center">
-                  Manifestasi Peradaban: Yang Dibicarakan Ketika Membicarakan
-                  Manusia
+                  Memantik Baskara: Tersulut Tak Membara, Terbakar Tak Bersuara
                 </div>
               </div>
             </div>

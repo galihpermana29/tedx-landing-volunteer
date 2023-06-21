@@ -9,7 +9,10 @@ import budget from '../../assets/imgs/budget.png';
 import sponsor from '../../assets/imgs/sponsor.png';
 import event from '../../assets/imgs/event.png';
 import { useHorizontalScroll } from '../../hooks/scroll';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
+import left from '../../assets/imgs/left.png';
+import right from '../../assets/imgs/right.png';
 
 import {
   MouseParallaxContainer,
@@ -80,6 +83,54 @@ export const SectionThree = () => {
   const [status, setStatusScroll] = useState(false);
   const scrollRef = useHorizontalScroll(status);
 
+  const leftRef = useRef();
+  const rightRef = useRef();
+
+  useEffect(() => {
+    const el = rightRef.current;
+    const tar = scrollRef.current;
+    if (el) {
+      const onClick = (e) => {
+        e.preventDefault();
+        const width =
+          window.innerWidth ||
+          document.documentElement.clientWidth ||
+          document.body.clientWidth;
+
+        tar.scrollTo({
+          left: width + tar.scrollLeft,
+          behavior: 'smooth',
+        });
+      };
+      el.addEventListener('click', onClick);
+      return () => el.removeEventListener('click', onClick);
+    }
+  }, []);
+
+  useEffect(() => {
+    const el = leftRef.current;
+    const tar = scrollRef.current;
+    if (el) {
+      const onClick = (e) => {
+        e.preventDefault();
+        const width =
+          window.innerWidth ||
+          document.documentElement.clientWidth ||
+          document.body.clientWidth;
+
+        const stopSection = document.getElementById('stop-scroll');
+        const rect = stopSection.getBoundingClientRect();
+        const isInView = rect.top <= 0.4;
+        tar.scrollTo({
+          left: tar.scrollLeft - width,
+          behavior: 'smooth',
+        });
+      };
+      el.addEventListener('click', onClick);
+      return () => el.removeEventListener('click', onClick);
+    }
+  }, []);
+
   return (
     <div className="relative bg-[url('/texture.png')] " id="section-three">
       <div className="relative min-h-screen bg-[url('/cloudy.png')] bg-no-repeat bg-cover pb-[80px] ">
@@ -119,6 +170,18 @@ export const SectionThree = () => {
                 ))}
               </div>
             ))}
+          </div>
+          <div className="w-full flex justify-center items-center gap-[30px] mt-[50px]">
+            <div
+              ref={leftRef}
+              className="bg-[#04BD2C] border-2 border-black h-[60px] w-[60px] justify-center flex items-center rounded-full cursor-pointer">
+              <img src={left} alt="ll" />
+            </div>
+            <div
+              ref={rightRef}
+              className="bg-[#04BD2C] border-2 border-black h-[60px] w-[60px] justify-center flex items-center rounded-full cursor-pointer">
+              <img src={right} alt="rr" />
+            </div>
           </div>
         </div>
       </div>
