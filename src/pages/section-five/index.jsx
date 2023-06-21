@@ -8,8 +8,8 @@ export const SectionFive = () => {
     <div className="relative overflow-hidden h-[100vh]" id="section-five">
       <video
         className="absolute h-auto w-auto min-h-[100%] min-w-[100%] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[1] object-cover"
-        autoplay
-        loop
+        autoplay="autoplay"
+        loop="loop"
         muted
         defaultMuted
         playsInline
