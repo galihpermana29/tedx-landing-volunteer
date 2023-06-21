@@ -19,7 +19,7 @@ export const SectionFour = () => {
           <div className="flex flex-col items-center gap-[20px] ">
             <img src={nol} alt="2020" className="max-w-[200px]" />
             <div className="overflow-hidden rounded-[10px] bg-[#8AFFA3] cursor-pointer hover:border-[6px] border-[6px] border-transparent hover:border-[#04BD2C] transition-all ease-in-out duration-[0.5s]">
-              <div className="h-[200px] w-[350px]">
+              <div className="h-[200px] w-[300px] md:w-[350px]">
                 <iframe
                   className="w-full h-full"
                   src="https://www.youtube.com/embed/N4u36OXvUkI"
@@ -38,7 +38,7 @@ export const SectionFour = () => {
           <div className="flex flex-col items-center gap-[20px] cursor-pointer">
             <img src={satu} alt="2020" className="max-w-[200px]" />
             <div className="overflow-hidden rounded-[10px] bg-[#8AFFA3] cursor-pointer hover:border-[6px] border-[6px] border-transparent hover:border-[#04BD2C] transition-all ease-in-out duration-[0.5s]">
-              <div className="h-[200px] w-[350px]">
+              <div className="h-[200px] w-[300px] md:w-[350px]">
                 <iframe
                   className="w-full h-full"
                   src="https://www.youtube.com/embed/rDgusdeaG5E"
@@ -58,7 +58,7 @@ export const SectionFour = () => {
           <div className="flex flex-col items-center gap-[20px] cursor-pointer">
             <img src={dua} alt="2020" className="max-w-[200px]" />
             <div className="overflow-hidden rounded-[10px] bg-[#8AFFA3] cursor-pointer hover:border-[6px] border-[6px] border-transparent hover:border-[#04BD2C] transition-all ease-in-out duration-[0.5s]">
-              <div className="h-[200px] w-[350px]">
+              <div className="h-[200px] w-[300px] md:w-[350px]">
                 <iframe
                   className="w-full h-full"
                   src="https://www.youtube.com/embed/AU-dn63kasQ"
@@ -77,7 +77,7 @@ export const SectionFour = () => {
           <div className="flex flex-col items-center gap-[20px] cursor-pointer">
             <img src={tiga} alt="2020" className="max-w-[200px]" />
             <div className="overflow-hidden rounded-[10px] bg-[#8AFFA3] cursor-pointer hover:border-[6px] border-[6px] border-transparent hover:border-[#04BD2C] transition-all ease-in-out duration-[0.5s]">
-              <div className="h-[200px] w-[350px] ">
+              <div className="h-[200px] w-[300px] md:w-[350px] ">
                 <div className="flex justify-center items-center h-full">
                   <img src={segera} alt="ss" className="" />
                 </div>

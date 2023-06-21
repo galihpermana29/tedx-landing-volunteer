@@ -25,11 +25,11 @@ const data = [
     page: [
       {
         img: curator,
-        text: 'Menentukan siapa yang akan berbicara dalam pre-event dan main event serta topik yang akan dibawakan.',
+        text: 'Menentukan siapa yang akan berbicara dalam pre-event dan main event serta topik yang akan dibawakan',
       },
       {
         img: cem,
-        text: 'Bertanggung jawab atas segala bentuk publikasi melalui situs web, media sosial, dan agenda promosi acara lainnya.',
+        text: 'Mengelola segala bentuk publikasi melalui situs web, media sosial, dan agenda-agenda promosi acara lainnya',
       },
     ],
   },
@@ -37,11 +37,11 @@ const data = [
     page: [
       {
         img: ep,
-        text: 'Memimpin semua produksi, perlengkapan, perencanaan, manajemen panggung, teknologi, selama acara berlangsung.',
+        text: 'Memimpin semua produksi, perlengkapan, perencanaan, manajemen panggung, dan teknologi selama acara berlangsung',
       },
       {
         img: vp,
-        text: 'Mengawasi video dan produksi acara – mulai dari mengelola kebutuhan audio dan video, operator kamera, dan streaming langsung acara.',
+        text: 'Memproduksi video, mulai dari mengelola kebutuhan audio, video, mengoperasikan kamera, hingga melakukan siaran langsung acara',
       },
     ],
   },
@@ -49,11 +49,11 @@ const data = [
     page: [
       {
         img: design,
-        text: 'Bertanggung jawab dalam membuat logo acara, materi branding, dan aset estetika lainnya dalam tiap komponen acara.',
+        text: 'Mengonsep dan membuat desain serta aset estetika lainnya untuk pendukung visual acara',
       },
       {
         img: website,
-        text: 'Bertanggung jawab untuk mengembangkan dan mengelola situs web yang dapat diakses dan dikelola dengan mudah.',
+        text: 'Mengembangkan dan mengelola situs web yang dapat diakses dan digunakan secara intuitif',
       },
     ],
   },
@@ -61,11 +61,11 @@ const data = [
     page: [
       {
         img: budget,
-        text: 'Bekerja sama dengan Sponsorship serta bertanggung jawab atas pemasukan dan pengeluaran dana.',
+        text: 'Bertanggung jawab dalam mengelola pemasukan dan pengeluaran dana',
       },
       {
         img: sponsor,
-        text: 'Bertanggung jawab menggalangkan dana dari sponsor untuk biaya selama acara berlangsung',
+        text: 'Mengelola sumber-sumber dana sebagai akomodasi biaya dalam acara',
       },
     ],
   },
@@ -73,7 +73,7 @@ const data = [
     page: [
       {
         img: event,
-        text: 'Mengelola sebagian besar logistik hari acara, bertanggung jawab untuk menciptakan "pengalaman TEDx" untuk tamu, mengelola kegiatan hari acara di luar panggung utama, dan bertanggung jawab atas kebutuhan tiket dan pendaftaran.',
+        text: 'Bertanggung jawab atas “TEDx Experience” untuk para audiens serta merancang dan mengatur segala kebutuhan dan jalannya acara.',
       },
     ],
   },
@@ -153,15 +153,15 @@ export const SectionThree = () => {
                     globalFactorY={0.1}>
                     <div
                       key={idx}
-                      className="flex-1 flex flex-col items-center">
+                      className="flex-1 flex flex-col items-center  overflow-visible">
                       <MouseParallaxChild
-                        className="flex-1 flex flex-col items-center"
+                        className="flex-1 flex flex-col items-center overflow-visible relative"
                         factorX={0.9}
                         factorY={0.5}>
-                        <div className="h-[250px] md:mb-[100px] flex justify-center items-center">
+                        <div className="h-[250px]  md:mb-[100px] flex justify-center items-center px-[30px] relative z-20">
                           <img src={p.img} alt="s" />
                         </div>
-                        <p className="font-open font-[600] md:text-[20px] text-center max-w-[300px] md:max-w-[500px] ">
+                        <p className="font-open font-[600] md:text-[20px] text-center max-w-[300px] md:max-w-[500px]">
                           {p.text}
                         </p>
                       </MouseParallaxChild>
