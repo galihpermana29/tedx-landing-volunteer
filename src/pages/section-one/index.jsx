@@ -17,11 +17,11 @@ export const SectionOne = () => {
     <div className="relative overflow-hidden h-[100vh]">
       <video
         className="absolute h-auto w-auto min-h-[100%] min-w-[100%] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[1] object-cover"
-        autoplay="autoplay"
-        loop="loop"
+        autoplay
+        loop
         muted
         defaultMuted
-        playsinline
+        playsInline
         preload="auto">
         <source src={vid1} type="video/mp4" />
       </video>
