@@ -12,10 +12,10 @@ export const SectionTwo = () => {
         <div className="text flex flex-wrap mt-[50px] gap-[20px] justify-between text-justify w-full max-w-[1300px]">
           <div className="flex flex-col gap-[20px] min-w-[300px] max-w-[570px] flex-1">
             <div>
-              <h1 className="font-open text-black font-[700] text-[20px]">
+              <h1 className="font-open 2xl:text-[40px] text-black font-[700] text-[20px]">
                 TED
               </h1>
-              <p className="mt-[20px] font-open text-black font-[400] text-[16px]">
+              <p className="mt-[20px] 2xl:text-[23px] font-open text-black font-[400] text-[16px]">
                 TED merupakan sebuah organisasi nirlaba dengan semangat “Ideas
                 Worth Spreading” yang berfokus pada Technology, Entertainment,
                 dan Design. TED pertama kali dibentuk pada tahun 1984 dan
@@ -24,10 +24,10 @@ export const SectionTwo = () => {
               </p>
             </div>
             <div>
-              <h1 className="font-open text-black font-[700] text-[20px]">
+              <h1 className="font-open 2xl:text-[40px] text-black font-[700] text-[20px]">
                 TEDx
               </h1>
-              <p className="mt-[20px] font-open text-black font-[400] text-[16px]">
+              <p className="mt-[20px] 2xl:text-[23px] font-open text-black font-[400] text-[16px]">
                 TEDx merupakan events yang mengolaborasikan komunitas lokal
                 untuk berbagi ide dengan konsep yang ada pada TED sehingga
                 memicu diskusi dan koneksi yang mendalam. TEDx dengan label
@@ -38,10 +38,10 @@ export const SectionTwo = () => {
           </div>
           <div className="min-w-[300px] max-w-[570px] flex-1">
             <div>
-              <h1 className="font-open text-black font-[700] text-[20px]">
+              <h1 className="font-open 2xl:text-[40px] text-black font-[700] text-[20px]">
                 TEDxUniversitasBrawijaya
               </h1>
-              <p className="mt-[20px] font-open text-black font-[400] text-[16px]">
+              <p className="mt-[20px] 2xl:text-[23px] font-open text-black font-[400] text-[16px]">
                 TEDxUniversitasBrawijaya merupakan salah satu dari TEDx events
                 yang diselenggarakan secara independen dengan lisensi TEDx untuk
                 lingkup komunitas Universitas Brawijaya. Pada tahun ini,
@@ -54,7 +54,7 @@ export const SectionTwo = () => {
         </div>
       </div>
       <div className="hidden md:z-20 md:absolute md:block md:bottom-[-80px] md:right-[0px] lg:right-[50px] overflow-hidden">
-        <img src={flower} alt="bunga" className="lg:w-[500px]" />
+        <img src={flower} alt="bunga" className="lg:w-[400px] xl:w-[500px]" />
       </div>
     </div>
   );

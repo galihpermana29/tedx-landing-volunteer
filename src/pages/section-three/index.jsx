@@ -145,7 +145,7 @@ export const SectionThree = () => {
             className="flex">
             {data.map((d, idx) => (
               <div
-                className=" flex flex-col md:flex-row flex-wrap justify-center items-center min-w-[100vw] min-h-[100vh] md:gap-[150px]"
+                className="flex flex-col md:flex-row justify-center items-center min-w-[100vw] min-h-[100vh] md:gap-[100px] lg:gap-[120px] lg:px-[20px]"
                 key={idx}>
                 {d.page.map((p, idx) => (
                   <MouseParallaxContainer
@@ -158,7 +158,7 @@ export const SectionThree = () => {
                         className="flex-1 flex flex-col items-center overflow-visible relative"
                         factorX={0.9}
                         factorY={0.5}>
-                        <div className="h-[250px]  md:mb-[100px] flex justify-center items-center px-[30px] relative z-20">
+                        <div className="md:min-h-[350px] md:mb-[50px] lg:mb-[60px] flex justify-center items-center px-[30px] relative z-20">
                           <img src={p.img} alt="s" />
                         </div>
                         <p className="font-open font-[600] md:text-[20px] text-center max-w-[300px] md:max-w-[500px]">

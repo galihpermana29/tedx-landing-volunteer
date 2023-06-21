@@ -30,7 +30,7 @@ export const SectionOne = () => {
           <div
             className={`${
               video ? 'opacity-[0.00001]' : ''
-            } hidden lg:flex absolute top-[100px] left-[100px] max-w-[250px] transition-all ease-in-out duration-[0.2s]`}>
+            } hidden lg:flex absolute 2xl:top-[200px] 2xl:max-w-[400px] top-[100px] left-[100px] max-w-[250px] transition-all ease-in-out duration-[0.2s]`}>
             <MouseParallaxChild factorX={0.3} factorY={0.5}>
               <img src={awan1} alt="t" />
             </MouseParallaxChild>
@@ -38,7 +38,7 @@ export const SectionOne = () => {
           <div
             className={`${
               video ? 'opacity-[0.00001]' : ''
-            } hidden lg:flex absolute top-[250px] right-[200px] max-w-[200px] transition-all ease-in-out duration-[0.4s]`}>
+            } hidden lg:flex absolute 2xl:top-[400px] 2xl:right-[200px] lg:right-[100px] lg:top-[200px] top-[250px] right-[200px] max-w-[200px] transition-all ease-in-out duration-[0.4s]`}>
             <MouseParallaxChild factorX={0.7} factorY={0.8}>
               <img src={awan2} alt="t" />
             </MouseParallaxChild>
@@ -46,7 +46,7 @@ export const SectionOne = () => {
           <div
             className={`${
               video ? 'opacity-[0.00001]' : ''
-            }hidden lg:flex absolute bottom-[100px] right-[500px] transition-all ease-in-out duration-[0.5s]`}>
+            }hidden lg:flex absolute 2xl:right-[700px] lg:right-[300px] bottom-[100px] right-[500px] transition-all ease-in-out duration-[0.5s]`}>
             <MouseParallaxChild factorX={0.3} factorY={0.3}>
               <img src={burung} alt="t" />
             </MouseParallaxChild>
@@ -56,13 +56,13 @@ export const SectionOne = () => {
             className={`${
               video ? 'opacity-[0.00001]' : ''
             } mb-[100px] transition-all ease-in-out duration-[0.8s]`}>
-            <div className="font-[700] text-[#FF191B] text-[40px] md:text-[64px] max-w-[800px]">
+            <div className="font-[700] text-[#FF191B] 2xl:text-[100px] text-[40px] md:text-[64px] max-w-[800px]">
               TEDx
             </div>
-            <div className="font-[700] text-[40px] md:text-[64px] max-w-[800px]">
+            <div className="font-[700] text-[40px] 2xl:text-[100px] 2xl:max-w-[2000px] md:text-[64px] max-w-[800px]">
               Universitas Brawijaya
             </div>
-            <div className="font-[700] text-[#FF191B] text-[80px] md:text-[128px] max-w-[800px]">
+            <div className="font-[700] text-[#FF191B] 2xl:text-[170px] text-[80px] md:text-[128px] max-w-[800px]">
               2023
             </div>
           </div>
