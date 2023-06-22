@@ -42,7 +42,7 @@ export const SectionSix = () => {
       </div>
 
       <div className="scroll-left mt-[100px]">
-        <div className="flex items-center gap-[20px]">
+        <div className="flex items-center gap-[20px] wrapper">
           <img src={runningText} alt="running text" className="flex-1" />
           <img
             src={star}

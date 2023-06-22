@@ -1,23 +1,26 @@
 .scroll-left {
-  height: 100px;
+  height: 120px;
   overflow: hidden;
   position: relative;
 }
-.scroll-left div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  line-height: 50px;
-  text-align: center;
-  /* Starting position */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  /* Apply animation to this element */
-  -moz-animation: scroll-left 15s linear infinite;
-  -webkit-animation: scroll-left 15s linear infinite;
-  animation: scroll-left 15s linear infinite;
+.scroll-left {
+  & > .wrapper {
+    position: absolute;
+    width: calc(1316px * 2.5);
+    height: 100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: scroll-left 10s linear infinite;
+    -webkit-animation: scroll-left 10s linear infinite;
+    animation: scroll-left 10s linear infinite;
+  }
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
